@@ -1,0 +1,12 @@
+spring:
+   #JPA
+   jpa: 
+      hibernate.ddl-auto: none
+      open-in-view: false
+   h2.console.enabled: true
+   #Database
+   datasource:
+      schema: classpath*:db/h2/schema.sql
+      data: classpath*:db/h2/data.sql
+      initialization-mode: always		
+server.port: 8081		

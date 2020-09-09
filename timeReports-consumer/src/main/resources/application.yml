@@ -1,0 +1,9 @@
+spring:
+   thymeleaf:
+      mode: HTML
+      reactive.max-chunk-size: 8192
+   messages.basename: messages/messages
+   mvc:
+      locale: en_EN
+      locale-resolver: fixed
+server.url: http://localhost:8081
