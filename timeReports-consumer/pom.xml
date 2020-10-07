@@ -38,14 +38,51 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-		
+
 		<!-- https://mvnrepository.com/artifact/com.squareup.okhttp3/mockwebserver -->
 		<dependency>
 		    <groupId>com.squareup.okhttp3</groupId>
 		    <artifactId>mockwebserver</artifactId>
 		    <scope>test</scope>
 		</dependency>
+
+		
+		<!-- PRODUCER STUB -->
+	    <dependency>
+	        <groupId>eu.arima.tr</groupId>
+	        <artifactId>timeReports-producer</artifactId>
+	        <classifier>stubs</classifier>
+	        <version>0.0.1-SNAPSHOT</version>
+	        <scope>test</scope>
+	        <exclusions>
+	            <exclusion>
+	                <groupId>*</groupId>
+	                <artifactId>*</artifactId>
+	            </exclusion>
+	        </exclusions>
+	    </dependency>
+	    
+	     <!-- SPRING CLOUD CONTRACT -->
+	    <dependency>
+	      <groupId>org.springframework.cloud</groupId>
+	      <artifactId>spring-cloud-starter-contract-stub-runner</artifactId>
+	      <scope>test</scope>
+	    </dependency>
+	    
 	</dependencies>
+
+	<dependencyManagement>
+	    <dependencies>
+	      <dependency>
+	        <groupId>org.springframework.cloud</groupId>
+	        <artifactId>spring-cloud-dependencies</artifactId>
+	        <version>${spring-cloud.version}</version>
+	        <type>pom</type>
+	        <scope>import</scope>
+	      </dependency>
+	   </dependencies>
+	</dependencyManagement>
+
 
 	<build>
 		<plugins>
