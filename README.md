@@ -21,4 +21,4 @@ Run de consumer:
  ./mvnw spring-boot:run
 ```
 
-And go to the [Home page at http://localhost:8080](http://localhost:8080) (the data in the database is the one contained in this [file](https://github.com/jaguado-arima/time-report-contractTesting/blob/master/timeReports-producer/src/main/resources/db/h2/data.sql))
+And go to the [Home page at http://localhost:8080](http://localhost:8080) (the data in the database is the one contained in this [file](https://github.com/wearearima/time-report-contractTesting-02/blob/master/timeReports-producer/src/main/resources/db/h2/data.sql))
