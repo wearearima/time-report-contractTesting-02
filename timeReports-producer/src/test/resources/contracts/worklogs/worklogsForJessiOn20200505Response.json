@@ -1,0 +1,56 @@
+[
+	{
+		"id": 4,
+		"worker": {
+			"id": 1,
+			"userName": "JESSI",
+			"new": false
+		},
+		"task": {
+			"id": 1,
+			"name": "Daily meeting",
+			"new": false
+		},
+		"day": "2020-05-05",
+		"fromTime": "08:30:00",
+		"toTime": "09:30:00",
+		"description": "Daily meeting",
+		"new": false
+	},
+	{
+		"id": 8,
+		"worker": {
+			"id": 1,
+			"userName": "JESSI",
+			"new": false
+		},
+		"task": {
+			"id": 3,
+			"name": "Implement the use case Create report for user and day",
+			"new": false
+		},
+		"day": "2020-05-05",
+		"fromTime": "09:30:00",
+		"toTime": "16:30:00",
+		"description": "Create database and queries",
+		"new": false
+	},
+	{
+		"id": 9,
+		"worker": {
+			"id": 1,
+			"userName": "JESSI",
+			"new": false
+		},
+		"task": {
+			"id": 3,
+			"name": "Implement the use case Create report for user and day",
+			"new": false
+		},
+		"day": "2020-05-05",
+		"fromTime": "08:30:00",
+		"toTime": "11:00:00",
+		"description": "Create de frontend form for selecting user and date",
+		"new": false
+	}
+]

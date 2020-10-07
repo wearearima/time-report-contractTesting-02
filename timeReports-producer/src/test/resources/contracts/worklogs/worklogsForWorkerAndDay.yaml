@@ -1,0 +1,19 @@
+description: Given a worker's username and a day it returns the worklog info for that worker and day
+name: worklogsForWokerAndDay_success
+request:
+   urlPath: /worklogs/worker/JESSI
+   queryParameters:
+      day: "2020-05-05"
+   method: GET
+   matchers:
+    url:
+      regex: /worklogs/worker/([a-zA-Z]*)
+    queryParameters:
+      - key: day
+        type: matching
+        value: "(\\d\\d\\d\\d)-(0[1-9]|1[012])-(0[1-9]|[12][0-9]|3[01])"
+response:
+   status: 200
+   headers:
+      Content-Type: "application/json"
+   bodyFromFile: worklogsForJessiOn20200505Response.json
