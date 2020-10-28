@@ -54,12 +54,6 @@
 	        <classifier>stubs</classifier>
 	        <version>0.0.1-SNAPSHOT</version>
 	        <scope>test</scope>
-	        <exclusions>
-	            <exclusion>
-	                <groupId>*</groupId>
-	                <artifactId>*</artifactId>
-	            </exclusion>
-	        </exclusions>
 	    </dependency>
 	    
 	     <!-- SPRING CLOUD CONTRACT -->
