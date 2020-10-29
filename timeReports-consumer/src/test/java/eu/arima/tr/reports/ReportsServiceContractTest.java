@@ -12,8 +12,8 @@ import org.springframework.cloud.contract.stubrunner.spring.AutoConfigureStubRun
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 @ExtendWith(SpringExtension.class)
-@SpringBootTest(properties = { "server.url=http://localhost:8083" })
-@AutoConfigureStubRunner(ids = { "eu.arima.tr:timeReports-producer:+:stubs:8083" })
+@SpringBootTest
+@AutoConfigureStubRunner(ids = { "eu.arima.tr:timeReports-producer:+:stubs:" })
 public class ReportsServiceContractTest {
 
 	@Autowired
